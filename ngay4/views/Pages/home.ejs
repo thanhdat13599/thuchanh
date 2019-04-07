@@ -1,0 +1,16 @@
+<div class="container">
+    <% posts.forEach(function(post){ %>
+        <article class="home">
+            <span class="post-date"><%= post.pdate %></span>
+
+            <h3>
+                <a href="<%= '/entry/' + post.pid %>">
+                <%= post.ptitle %>
+            </h3>
+            <div>
+                <%= post.pdepscription %>
+            </div>
+        </article>
+        <%})%>
+        <hr>
+</div>
